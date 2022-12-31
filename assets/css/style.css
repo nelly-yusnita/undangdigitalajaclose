@@ -1,0 +1,93 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ===== VARIABLES CSS ===== */
+:root{
+	/* ===== Colors ===== */
+	--body-color: #FFF;
+	--text-color: #141414;
+
+	/* ===== Font & Typography ===== */
+	--text-font: 'Playfair Display', serif;
+	--biggest-font-size: 1.85rem;
+
+	/* ===== Font Weight ===== */
+	--regular-font: 400;
+	--medium-font: 500;
+	--semi-bold-font: 600;
+}
+
+/* Responsive Font & Typography */
+@media screen and (min-width: 768px){
+	:root{
+		--biggest-font-size: 2.5rem;
+	}
+}
+/* end responsive font & typography */
+/* ===== end variables css ===== */
+
+/* ===== BASE ===== */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: var(--text-font);
+	font-size: var(--normal-font-size);
+	background-color: var(--body-color);
+	color: var(--text-color);
+	line-height: 1.6;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* ===== end base ===== */
+
+/* ===== LAYOUT ===== */
+.container{
+	max-width: 1024px;
+	width: calc(100% - 2rem);
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+/* ===== end layout ===== */
+
+/* ===== MAIN ===== */
+.main{
+	background: rgba(255, 255, 255, .4) url(../img/main-background.jpg) no-repeat center/cover;
+	background-blend-mode: overlay;
+	width: 100%;
+	min-height: 100vh;
+	padding: 7rem 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.main__container{
+	text-align: center;
+}
+.main__message{
+	font-size: var(--biggest-font-size);
+	font-style: italic;
+}
+/* ===== end main ===== */
+
+@media screen and (min-width: 1024px){
+	/* ===== LAYOUT ===== */
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* ===== end layout ===== */
+}
