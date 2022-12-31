@@ -9,7 +9,7 @@
 
 	/* ===== Font & Typography ===== */
 	--text-font: 'Playfair Display', serif;
-	--biggest-font-size: 1.85rem;
+	--h1-font-size: 1.5rem;
 
 	/* ===== Font Weight ===== */
 	--regular-font: 400;
@@ -20,7 +20,7 @@
 /* Responsive Font & Typography */
 @media screen and (min-width: 768px){
 	:root{
-		--biggest-font-size: 2.5rem;
+		--h1-font-size: 2.25rem;
 	}
 }
 /* end responsive font & typography */
@@ -59,7 +59,7 @@ img{
 
 /* ===== MAIN ===== */
 .main{
-	background: rgba(255, 255, 255, .4) url(../img/main-background.jpg) no-repeat center/cover;
+	background: rgba(255, 255, 255, .7) url(../img/main-background.jpg) no-repeat center/cover;
 	background-blend-mode: overlay;
 	width: 100%;
 	min-height: 100vh;
@@ -78,7 +78,7 @@ img{
 	text-align: center;
 }
 .main__message{
-	font-size: var(--biggest-font-size);
+	font-size: var(--h1-font-size);
 	font-style: italic;
 }
 /* ===== end main ===== */
