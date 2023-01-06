@@ -59,7 +59,7 @@ img{
 
 /* ===== MAIN ===== */
 .main{
-	background: rgba(255, 255, 255, .7) url(../img/main-background.jpg) no-repeat center/cover;
+	background: rgba(255, 255, 255, .5) url(../img/main-background.jpg) no-repeat center/cover;
 	background-blend-mode: overlay;
 	width: 100%;
 	min-height: 100vh;
@@ -68,11 +68,11 @@ img{
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+		-ms-flex-pack: center;
+			justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+		-ms-flex-align: center;
+			align-items: center;
 }
 .main__container{
 	text-align: center;
@@ -80,8 +80,25 @@ img{
 .main__message{
 	font-size: var(--h1-font-size);
 	font-style: italic;
+	border: 2px solid #141414;
+	padding: 2.5rem 1.5rem;
 }
 /* ===== end main ===== */
+
+/* ===== BREAKPOINTS ===== */
+@media screen and (min-width: 567px){
+	.main__message{
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 767px){
+	.main__message{
+		width: 600px;
+	}
+}
 
 @media screen and (min-width: 1024px){
 	/* ===== LAYOUT ===== */
